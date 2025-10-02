@@ -1,14 +1,11 @@
 import React from "react";
-import Link from "next/link";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { Link } from 'next-view-transitions'
 import { ChartNoAxesCombined, CircleCheck, Zap } from "lucide-react";
 
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <Navbar />
       <main className="flex-grow">
         <div className="border-b-2 border-[#7b6868b1]">
           <div className="mx-auto max-w-7xl px-4 py-10 pt-44 sm:px-6 lg:px-8">
@@ -24,9 +21,7 @@ export default function HomePage() {
                 href="/dashboard"
                 className="group relative cursor-pointer overflow-hidden rounded-lg bg-[#4b5563] px-6 py-3 text-neutral-300 shadow-md transition-colors duration-300 hover:bg-[#6b7280]"
               >
-                {/* Top half line */}
                 <span className="absolute top-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-gray-400 opacity-60 group-hover:bg-gray-800"></span>
-                {/* Bottom half line */}
                 <span className="absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-gray-400 opacity-60 group-hover:bg-gray-800"></span>
                 Start Practicing
               </Link>
@@ -84,7 +79,6 @@ export default function HomePage() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

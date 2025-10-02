@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#4285F4" /> <stop offset="50%" stop-color="#34A853" /> <stop offset="100%" stop-color="#FBBC05" /> </linearGradient>
+  </defs>
+  
+  <path fill="url(#gradient)">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+      values="
+        M100,100 C150,50 250,50 300,100 C350,150 350,250 300,300 C250,350 150,350 100,300 C50,250 50,150 100,100 Z;
+        M100,100 C125,75 275,75 300,100 C325,125 325,275 300,300 C275,325 125,325 100,300 C75,275 75,125 100,100 Z;
+        M100,100 C150,50 250,50 300,100 C350,150 350,250 300,300 C250,350 150,350 100,300 C50,250 50,150 100,100 Z
+      "
+    />
+    <animateTransform 
+        attributeName="transform" 
+        type="rotate"
+        from="0 200 200"
+        to="360 200 200"
+        dur="15s"
+        repeatCount="indefinite"
+    />
+  </path>
+</svg>

@@ -1,115 +1,82 @@
 import React from "react";
 import Link from "next/link";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { ChartNoAxesCombined, CircleCheck, Zap } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
+      <Navbar />
       <main className="flex-grow">
-        <div className=" text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="border-b-2 border-[#7b6868b1]">
+          <div className="mx-auto max-w-7xl px-4 py-10 pt-44 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="mb-6 bg-gradient-to-b from-[#0d0d0b] bg-clip-text text-4xl font-bold text-transparent md:text-6xl">
                 Master JEE with Confidence
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-                Practice with high-quality JEE questions, get instant feedback,
-                and track your progress to excel in your exam preparation.
+              <p className="mx-auto mb-8 max-w-2xl text-lg text-neutral-400">
+                Practice. Learn. Improve. Repeat. Learn from every question and
+                move one step ahead each day.
               </p>
-              <div className="space-x-4">
-                <Link
-                  href="/dashboard"
-                  className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
-                >
-                  Start Practicing
-                </Link>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                  Learn More
-                </button>
-              </div>
+              <Link
+                href="/dashboard"
+                className="group relative cursor-pointer overflow-hidden rounded-lg bg-[#4b5563] px-6 py-3 text-neutral-300 shadow-md transition-colors duration-300 hover:bg-[#6b7280]"
+              >
+                {/* Top half line */}
+                <span className="absolute top-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-gray-400 opacity-60 group-hover:bg-gray-800"></span>
+                {/* Bottom half line */}
+                <span className="absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-gray-400 opacity-60 group-hover:bg-gray-800"></span>
+                Start Practicing
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Features Section */}
-        <div className="bg-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="border-b-2 border-[#ab8b8b7d] py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-12 text-center">
+              <h2 className="mb-2 bg-gradient-to-t from-[#050505] bg-clip-text text-4xl font-semibold text-transparent">
                 Why Choose Our Platform?
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-[16px] text-gray-700">
                 Everything you need to succeed in JEE preparation
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    className="w-8 h-8 text-blue-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+            <div className="grid gap-8 md:grid-cols-3">
+              <div className="rounded-lg border-t border-b border-[#8c6e6e] p-6 text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
+                  <CircleCheck className="size-8 text-pink-900" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Instant Feedback</h3>
-                <p className="text-gray-600">
+                <h3 className="mb-2 text-xl font-semibold">Instant Feedback</h3>
+                <p className="text-sm text-gray-600">
                   Get immediate results with detailed explanations for each
                   question
                 </p>
               </div>
 
-              <div className="text-center p-6">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    className="w-8 h-8 text-green-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
+              <div className="rounded-lg border-t border-b border-[#8c6e6e] p-6 text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
+                  <Zap className="size-8 text-green-800" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="mb-2 text-xl font-semibold">
                   Quality Questions
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm text-gray-600">
                   Carefully curated questions covering all JEE topics and
                   difficulty levels
                 </p>
               </div>
 
-              <div className="text-center p-6">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    className="w-8 h-8 text-purple-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    />
-                  </svg>
+              <div className="rounded-lg border-t border-b border-[#8c6e6e] p-6 text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
+                  <ChartNoAxesCombined className="size-8 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Track Progress</h3>
-                <p className="text-gray-600">
+                <h3 className="mb-2 text-xl font-semibold">Track Progress</h3>
+                <p className="text-sm text-gray-600">
                   Monitor your performance and identify areas for improvement
                 </p>
               </div>
@@ -117,6 +84,7 @@ export default function HomePage() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

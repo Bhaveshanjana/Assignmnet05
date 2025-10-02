@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": "Medium",
+    "question": "A ball is thrown vertically upward with a velocity of 20 m/s. What will be its velocity after 3 seconds? (Take g = 10 m/s²)",
+    "options": [
+      "10 m/s upward",
+      "10 m/s downward", 
+      "50 m/s upward",
+      "50 m/s downward"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Using v = u - gt, where u = 20 m/s, g = 10 m/s², t = 3s. So v = 20 - (10×3) = -10 m/s. Negative sign indicates downward direction."
+  },
+  {
+    "id": 2,
+    "subject": "Chemistry",
+    "topic": "Organic Chemistry",
+    "difficulty": "Hard",
+    "question": "Which of the following compounds will show geometrical isomerism?",
+    "options": [
+      "CH₃-CH=CH-CH₃",
+      "CH₃-CH=CH₂",
+      "CH₂=CH₂",
+      "CH₃-CH₂-CH₃"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Geometrical isomerism occurs when there are different groups on each carbon of the double bond. CH₃-CH=CH-CH₃ has different groups (CH₃ and H) on each carbon."
+  },
+  {
+    "id": 3,
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": "Medium",
+    "question": "If f(x) = x³ + 3x² + 3x + 1, then f'(x) is:",
+    "options": [
+      "3x² + 6x + 3",
+      "3x² + 6x + 1",
+      "x² + 2x + 1",
+      "3x² + 6x + 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using power rule: f'(x) = d/dx(x³) + d/dx(3x²) + d/dx(3x) + d/dx(1) = 3x² + 6x + 3 + 0 = 3x² + 6x + 3"
+  },
+  {
+    "id": 4,
+    "subject": "Physics",
+    "topic": "Electricity",
+    "difficulty": "Easy",
+    "question": "The unit of electric current is:",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Watt",
+      "Ohm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Electric current is measured in Amperes (A). Volt is for voltage, Watt for power, and Ohm for resistance."
+  },
+  {
+    "id": 5,
+    "subject": "Chemistry",
+    "topic": "Inorganic Chemistry",
+    "difficulty": "Medium",
+    "question": "Which of the following is the most electronegative element?",
+    "options": [
+      "Chlorine",
+      "Fluorine",
+      "Oxygen",
+      "Nitrogen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fluorine is the most electronegative element with an electronegativity value of 4.0 on the Pauling scale."
+  },
+  {
+    "id": 6,
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "Hard",
+    "question": "If α and β are the roots of x² - 5x + 6 = 0, then α² + β² equals:",
+    "options": [
+      "13",
+      "25",
+      "37",
+      "49"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using the formula α² + β² = (α + β)² - 2αβ. Here α + β = 5 and αβ = 6. So α² + β² = 5² - 2(6) = 25 - 12 = 13."
+  }
+]
